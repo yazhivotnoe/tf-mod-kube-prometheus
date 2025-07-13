@@ -37,15 +37,6 @@ variable "release_name" {
   type        = string
 }
 
-variable "cluster_ip" {
-  default = ""
-  type    = string
-}
-
-variable "manualy_point_cluster_ip" {
-  default = false
-  type    = bool
-}
 
 variable "ingress_enable" {
   default = true

@@ -761,7 +761,7 @@ server:
 
     annotations: {}
     labels: {}
-    clusterIP: ${cluster_ip}
+    clusterIP: ""
 
     ## List of IP addresses at which the Prometheus server service is available
     ## Ref: https://kubernetes.io/docs/concepts/services-networking/service/#external-ips

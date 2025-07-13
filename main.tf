@@ -5,7 +5,6 @@ resource "helm_release" "this" {
   namespace        = var.deployment_namespace
   create_namespace = var.create_namespace
   values = [templatefile("${path.module}/templates/values.yaml.tpl", {
-    cluster_ip               = local.cluster_ip
     ingress_enable           = var.ingress_enable
     persistent_volume_enable = var.persistent_volume_enable
     service_enable           = var.service_enable
